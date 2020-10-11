@@ -1,4 +1,4 @@
-FRAC = 0.25
+FRAC = 0.05
 
 DIN_SESS_MAX_LEN = 50
 

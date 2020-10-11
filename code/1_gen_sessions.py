@@ -82,7 +82,7 @@ def gen_user_hist_sessions(model, FRAC=0.25):
         df_grouped = sub_data.groupby('user')
         if model == 'din':
             user_hist_session = applyParallel(
-                df_grouped, gen_session_list_din, n_jobs=20, backend='loky')
+                df_grouped, gen_session_list_din, n_jobs=20)
         else:
             user_hist_session = applyParallel(
                 df_grouped, gen_session_list_dsin, n_jobs=20, backend='multiprocessing')
